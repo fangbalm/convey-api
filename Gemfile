@@ -20,7 +20,13 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'active_model_serializers', '~> 0.10.0'
+
+gem 'faker', git: 'https://github.com/stympy/faker'
+
+gem 'rack-cors'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
