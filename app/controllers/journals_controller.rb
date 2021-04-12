@@ -1,4 +1,6 @@
 class JournalsController < ApplicationController
+    skip_before_action :verify_authenticity_token
+
     def index 
        @journals = Journal.all 
         render json: @journals
@@ -19,15 +21,22 @@ class JournalsController < ApplicationController
         end
     end 
 
+    def update 
+        @journal = Journal.find(params[:id])
+        @journal.update(journal_params)
+
+        render json: @journal
+    end
+
     def destroy 
         @journal = Journal.find(params[:id])
-        @journal.destroy! 
-        render json: {}
+        @journal.destroy!
+        render json: @journal
     end 
 
     private 
     def journal_params 
-        params.require(:journal).permit(:user_id, :title, :description, :private)
+        params.permit(:user_id, :title, :description, :private)
     end 
 
 end

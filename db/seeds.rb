@@ -37,6 +37,10 @@ ethnicityArray = ['Native', 'Asian', 'Black or African American', 'Hispanic or L
     #3
     Journal.create!(user_id: 3, title: "Mental Health Vent", description: "Because things have been getting harder recently", private: true)
 
+    Journal.create!(user_id: 1, title: "Test Journal", description: "This is a test journal for the app", private: true)
+    
+    Journal.create!(user_id: 1, title: "Test Journal NUMBA TWO", description: "This is a test journal for the app AGAIIIN", private: false)
+
     # CATEGORIES 
 
     #1
