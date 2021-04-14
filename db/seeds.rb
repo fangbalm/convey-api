@@ -53,15 +53,15 @@ ethnicityArray = ['Native', 'Asian', 'Black or African American', 'Hispanic or L
     # PROMPTS 
 
     #1 
-    Prompt.create!(user_id: 1, category_id: 1, prompt: "What is the last social situation that left you feeling uncomfortable and/or empty?")
+    Prompt.create!(category_id: 1, prompt: "What is the last social situation that left you feeling uncomfortable and/or empty?")
     #2
-    Prompt.create!(user_id: 1, category_id: 2, prompt: "Close your eyes for five seconds and think about an adjective that describes how you're feeling. Next, write the word down. Now list the 'why', 'when it happened?', and a small action plan with your next steps to change your current emotion into something else, whatever emotion that may be.")
+    Prompt.create!(category_id: 2, prompt: "Close your eyes for five seconds and think about an adjective that describes how you're feeling. Next, write the word down. Now list the 'why', 'when it happened?', and a small action plan with your next steps to change your current emotion into something else, whatever emotion that may be.")
     #3
-    Prompt.create!(user_id: 1, category_id: 3, prompt: "Write about a time that made you happy!")
+    Prompt.create!(category_id: 3, prompt: "Write about a time that made you happy!")
     #4
-    Prompt.create!(user_id: 2, category_id: 1, prompt: "Talk about the most recent microaggression that’s happened to you and how it made you feel. How did you respond, and what would you do next time to better take care of yourself?")
+    Prompt.create!(category_id: 1, prompt: "Talk about the most recent microaggression that’s happened to you and how it made you feel. How did you respond, and what would you do next time to better take care of yourself?")
     #5
-    Prompt.create!(user_id: 3, category_id: 2, prompt: "Talk about how the past year as a whole has effected you mentally. In what way has your sexuality or identity amplified these feelings you've experienced?")
+    Prompt.create!(category_id: 2, prompt: "Talk about how the past year as a whole has effected you mentally. In what way has your sexuality or identity amplified these feelings you've experienced?")
 
 
     # ENTRIES

@@ -1,4 +1,5 @@
 class EntriesController < ApplicationController
+    skip_before_action :verify_authenticity_token
     def index 
         entries = Entry.all 
         render json: entries
@@ -17,6 +18,13 @@ class EntriesController < ApplicationController
         else 
             render json: {error: 'Error while posting entry.'}, status: :not_acceptable
         end
+    end 
+
+    def update 
+        @entry = Entry.find(params[:id])
+        @entry.update(entry_params)
+
+        render json: @entry
     end 
 
     def destroy 
