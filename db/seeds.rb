@@ -110,5 +110,7 @@ ethnicityArray = ['Native', 'Asian', 'Black or African American', 'Hispanic or L
     #3 
     Entry.create!(journal_id: 3, prompt_id: 3, title: "Corona Feelings", mood: "Sad", content: "Coronavirus has left me feeling so sad lately. Not only has there been such a large increase in hate crimes, but I feel isolated constantly with all of the gay bars closed. That was the main way I got my sense of community..", date: time)
 
+    Entry.create!(journal_id: 4, prompt_id: 3, title: "School Snacks", mood: "Happy", content: "Back in the summer a few years ago I remember getting these delicious ice cream sandwich bars right by campus. It really takes me back to my college days!", date: time)
+
 
     puts "seeded 🌱"
