@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get '/user', to: 'users#show'; 
+  # get '/user', to: 'users#show'; 
+  post "/login", to: "users#login"
   resources :journals
   resources :entries
   resources :prompts
